@@ -48,7 +48,7 @@
 function registroCondomino() {
 
     if (!validateForm()) {
-        return; //No realiza almacenamiento
+        return;     //No ejecuta almacenamiento
     }
 
     const email = document.getElementById("email").value;
