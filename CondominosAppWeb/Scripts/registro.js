@@ -71,7 +71,6 @@ function registroCondomino() {
         return;
     }
 
-
     const tieneConstruccionValue = document.getElementById("tieneConstruccion").value;
 
     const rolValue = document.getElementById("rol").value;
@@ -80,7 +79,6 @@ function registroCondomino() {
         showMessage("Debe seleccionar un rol.", true);
         return;
     }
-
 
     const data = {
         idTipo: document.getElementById("idTipo").value,
@@ -100,7 +98,6 @@ function registroCondomino() {
         headers: {
             "Content-Type": "application/json"
         },
-        //body: JSON.stringify(data)
         body: JSON.stringify({ elCondomino: data })
     })
         .then(response => response.json())
@@ -140,7 +137,7 @@ function login() {
 
             if (response.d.success) {
 
-                // Role is integer now
+                // Rol es integer
                 if (response.d.tipoUsuario === 1) {
                     window.location.href = "Admin.aspx";
                 } else {
