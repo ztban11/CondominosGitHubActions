@@ -1,0 +1,19 @@
+name: Validar HTML
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout_repositorio
+        uses: actions/checkout@v4
+
+      - name: HTML_validacion
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+  
+      - name: Mensaje_confirmacion
+        run: echo "PIPELINE: Validación HTML ejecutada satisfactoriamente!"
