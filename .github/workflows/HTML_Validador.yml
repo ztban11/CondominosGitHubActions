@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repositorio
         uses: actions/checkout@v4
         
-      - name: Convert ASPX to HTML for validation
+      - name: Convierte ASPX a HTML para validacion
         run: |
           find . -name "*.aspx" -exec bash -c 'cp "$0" "${0%.aspx}.html"' {} \;
           
