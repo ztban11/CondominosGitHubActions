@@ -3,7 +3,7 @@ name: Validar HTML
 on:
   push:
     branches:
-        - main
+      - main
 
 jobs:
   validate:
@@ -17,4 +17,4 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
   
       - name: Mensaje confirmacion
-        run: echo "Pipeline: Validacion HTML ejecutada satisfactoriamente"
+        run: echo Pipeline: Validacion HTML ejecutada satisfactoriamente
