@@ -15,6 +15,6 @@ jobs:
 
       - name: Validar HTML
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
-  
+
       - name: Mensaje confirmacion
-        run: echo Pipeline: Validacion HTML ejecutada satisfactoriamente
+        run: echo Pipeline_validacion_HTML_correcta
